@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // submit buttons
+    $("#btn1").click(function(){
+  //      $("#test2").html("Adding new venture - equity: "+<br>+"Venture Name: "+$("#ventureName").val()+<br>+"Venture Description: "+$("#ventureDesctiption").val()+<br>+"Venture Start Date: "+$("#ventureStartDate").val()+<br>+"Projected Growth: "+$("#ventureProjectedGrowth").val()+"%"+<br>+"Price Per Share: "+$("#venturePricePerShare").val()+<br>+"Equity Issue Monetary Goal: "+$("#ventureGoal").val());
+        $("#test2").html("Logging in: "+$("#username").val());
+    });
+
+    $("input").focus(function(){
+      $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+      $(this).css("background-color", "#ffffff");
+    });
+  });
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ChEx</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="HomepageNoLogin">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Create New Account</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <h1 style="color:#835C3B;font-family:helvetica;text-align:center;">Coffeehouse Exchange</h1>
+    <p style="color:#835C3B;font-family:helvetica;text-align:center;">Where Everyday Talent Meets Opportunity</p>
+    <br>
+
+  <hr style="border:none;
+    color: #835C3B;
+    width: 90%;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;">
+  <br>
+
+  <div id='div1' style="text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px;">
+    Username: <input type="text" id="username" name="Username">
+    Password: <input type="text" id="password" name="Password">
+    <button id="btn1"><a href="Homepage">Submit</a></button>
+  </div>
+
+  <br>
+  <p id="test2" style="text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px;">Welcome to the Coffeehouse Exchange login page! Please enter your username and password to log in.</p>
+  <div id="divData"></div>
+
+  </body>
+  </html>

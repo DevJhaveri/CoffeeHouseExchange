@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // for the original object selection
+    $('#div1').hide();
+    $('#div2').hide();
+    $('#div3').hide();
+    $("#b1").click(function(){
+      $('#div1').show();
+      $('#div2').hide();
+      $('#div3').hide();
+    });
+    $("#b2").click(function(){
+      $('#div1').hide();
+      $('#div2').show();
+      $('#div3').hide();
+    });
+    $("#b3").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').hide();
+      $("#test2").html("Getting all outstanding issued debt and equities.");
+    });
+    $("#b4").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').show();
+    });
+    $("#b5").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').hide();
+      $("#test2").html("Getting account believability rating breakdown.");
+    });
+    $("#b6").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').hide();
+      $("#test2").html("Getting debt and equity issue history.");
+    });
+
+
+    // submit buttons
+    $("#btn1").click(function(){
+//      $("#test2").html("Adding new venture - equity: "+<br>+"Venture Name: "+$("#ventureName").val()+<br>+"Venture Description: "+$("#ventureDesctiption").val()+<br>+"Venture Start Date: "+$("#ventureStartDate").val()+<br>+"Projected Growth: "+$("#ventureProjectedGrowth").val()+"%"+<br>+"Price Per Share: "+$("#venturePricePerShare").val()+<br>+"Equity Issue Monetary Goal: "+$("#ventureGoal").val());
+        $("#test2").html("Adding new venture - equity: "+$("#ventureName").val());
+    });
+    $("#btn2").click(function(){
+//      $("#test2").html("Adding new venture - debt: "+<br>+"Venture Name: "+$("#ventureNameD").val()+<br>+"Venture Description: "+$("#ventureDesctiptionD").val()+<br>+"Venture Start Date: "+$("#ventureStartDateD").val()+<br>+"Debt Expiry Date: "+$("#ventureDebtExpiry").val()+<br>+"Interest Rate: "+$("#ventureInterestRate").val()+"%"+<br>+"Debt Issue Monetary Goal: "+$("#ventureGoalD").val());
+        $("#test2").html("Adding new venture - debt: "+$("#ventureNameD").val());
+    });
+    $("#btn3").click(function(){
+      $("#test2").html("Deleting venture with ID: "+$("#ventureID").val());
+    });
+
+    $("input").focus(function(){
+      $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+      $(this).css("background-color", "#ffffff");
+    });
+  });
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ChEx</a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li><a href="Homepage">Home</a></li>
+    <li class="active"><a href="EntrepreneurLanding">Entrepreneur Landing</a></li>
+    <li><a href="InvestorLanding">Investor Landing</a></li>
+    <li><a href="RankingPage">Rankings</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="LoginPage">Logout</a></li>
+          <li><a href="AccountPage">Account</a></li>
+          <li><a href="BalancesPage">Balances</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <h1 style="color:#835C3B;font-family:helvetica;text-align:center;">Coffeehouse Exchange</h1>
+    <p style="color:#835C3B;font-family:helvetica;text-align:center;">Where Local Innovation Meets Opportunity</p>
+    <br>
+
+  <hr style="border:none;
+    color: #835C3B;
+    width: 90%;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;">
+  <br>
+
+  <div align="center">
+  <div class="btn-group btn-group-sm">
+    <button type="button" id="b1" class="btn btn-primary">Add New Venture - Equity</button>
+    <button type="button" id="b2" class="btn btn-primary">Add New Venture - Debt</button>
+    <button type="button" id="b3" class="btn btn-primary">Outstanding Equity and Debt</button>
+    <button type="button" id="b4" class="btn btn-primary">Delete Erroneous Venture</button>
+    <button type="button" id="b5" class="btn btn-primary">Rating Breakdown</button>
+    <button type="button" id="b6" class="btn btn-primary">Equity and Debt Issue History</button>
+  </div>
+  </div>
+
+  <div id='div1' style="text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px;">
+    <h2>Add New Venture - Equity</h2><br>
+    Venture Name: <input type="text" id="ventureName" name="venture Name">
+    Venture Description: <input type="text" id="ventureDescription" name="venture Description">
+    Start Date: <input type="text" id="ventureStartDate" name="venture Start Date">
+    Projected Growth (%): <input type="text" id="ventureProjectedGrowth" name="venture Projected Growth">
+    Price per Share: <input type="text" id="venturePricePerShare" name="venture Price per Share">
+    Equity Issue Monetary Goal: <input type="text" id="ventureGoal" name="venture Goal">
+    <button id="btn1">Submit</button>
+  </div>
+  <div id='div2' style="text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px;">
+    <h2>Add New Venture - Debt</h2><br>
+    Venture Name: <input type="text" id="ventureNameD" name="venture Name Debt">
+    Venture Description: <input type="text" id="ventureDescriptionD" name="venture Description Debt">
+    Start Date: <input type="text" id="ventureStartDateD" name="venture Start Date Debt">
+    Debt Expiry Date: <input type="text" id="ventureDebtExpiry" name="venture Debt Expiry">
+    Interest Rate (%): <input type="text" id="ventureInterestRate" name="venture Interest Rate">
+    Debt Issue Monetary Goal: <input type="text" id="ventureGoalD" name="venture Goal Debt">
+    <button id="btn2">Submit</button>
+  </div>
+  <div id='div3' style="text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px;">
+    <h2>Delete Erroneous Venture</h2><br>
+    <p>Note: you can only delete erroneous ventures before start date of the venture</p><br>
+    Venture ID: <input type="text" id="ventureID" name="venture ID">
+    <button id="btn3">Submit</button>
+  </div>
+
+  <br>
+  <p id="test2" style="text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px;">Welcome to the Coffeehouse Exchange Investor Landing! Please use the toolbar above to add/remove ventures and check your ratings breakdown.</p>
+  <div id="divData"></div>
+
+  </body>
+  </html>

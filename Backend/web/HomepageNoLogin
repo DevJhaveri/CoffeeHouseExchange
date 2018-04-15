@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+/*  var topThree = {
+    List: [
+      :{
+        Ent_Rating:9.7,
+        VentureRating:9.9,
+        PricePerUnit:,
+        total:,
+        raised:,
+        ExpectedReturn:,
+        StartDate:
+      }
+      :{
+        Ent_Rating:,
+        VentureRating:,
+        PricePerUnit:,
+        total:,
+        raised:,
+        ExpectedReturn:,
+        StartDate:
+      }
+      :{
+        Ent_Rating:,
+        VentureRating:,
+        PricePerUnit:,
+        total:,
+        raised:,
+        ExpectedReturn:,
+        StartDate:
+      }
+    ]
+  }
+  $.get("", function(data){
+
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+        */
+</script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">ChEx</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="LoginPage">Login</a></li>
+        <li><a href="#">Create New Account</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 style="color:#835C3B;font-family:helvetica;text-align:center;">Coffeehouse Exchange</h1>
+  <p style="color:#835C3B;font-family:helvetica;text-align:center;">Where Local Innovation Meets Opportunity</p>
+  <br>
+
+  <hr style="border:none;
+  color: #835C3B;
+  width: 90%;
+  height: 20px;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;">
+  <br>
+
+
+
+
+
+  <div style="position: relative; background-image: url(images/restaurant.jpg); width: 100%; height: 600px;">
+
+    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 250pmx: font-weight: bold; color: #fff;background-color: rgba(1,1,1,0.5);">
+      <br>
+      <p style="font-size: 250%; text-align:center;font-family:helvetica;margin-left: 100px;margin-right: 100px">Gina traded in his NYC hotdog cart to live out his childhood dream of running an Italian restaurant. Read more <a href="google.com">here</a>!</p>
+      <br>
+    </div>
+
+
+  </div>
+  <br>
+
+  <h2 style="font-family:helvetica;text-align:center;">Top Ventures Today</h2>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-4" align="center">
+      <img src="images/farmero.jpg" alt="farmer" height="150" width="150"><br>
+      <br>
+      <div class="progress" style="width:70%">
+        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width:77%">
+          77% Complete
+        </div>
+      </div>
+
+      <p>Debt Issue</p>
+      <p>Entrepreneur Rating: 9.7/10.0</p>
+      <p>Venture Rating: 9.9/10.0</p>
+      <p>Interest: 6.82%</p>
+      <p>$6160/$8000 Raised</p>
+      <p>Start Date: May 2018</p>
+      <p>Debt Expiry: May 2021</p>
+
+    </div>
+    <div class="col-sm-4" align="center">
+      <img src="images/construction.jpg" alt="construction" height="150" width="150"><br>
+      <br>
+      <div class="progress" style="width:70%">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="width:54%">
+          54% Complete
+        </div>
+      </div>
+
+      <p>Venture Equity Issue</p>
+      <p>Entrepreneur Rating: 9.4/10.0</p>
+      <p>Venture Rating: 9.8/10.0</p>
+      <p>$26.80/share</p>
+      <p>$13503/$25000 Raised</p>
+      <p>8.5% Projected Annual Growth</p>
+      <p>Start Date: September 2018</p>
+
+    </div>
+    <div class="col-sm-4" align="center">
+      <img src="images/pottery.jpg" alt="pottery" height="150" width="150"><br>
+      <br>
+      <div class="progress" style="width:70%">
+        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+          89% Complete
+        </div>
+      </div>
+
+      <p>Venture Equity Issue</p>
+      <p>Entrepreneur Rating: 9.1/10.0</p>
+      <p>Venture Rating: 9.5/10.0</p>
+      <p>$11.20/share</p>
+      <p>$19611/$28000 Raised</p>
+      <p>4.3% Projected Annual Growth</p>
+      <p>Start Date: June 2018</p>
+
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // submit buttons
+    $("#btn1").click(function(){
+  //      $("#test2").html("Adding new venture - equity: "+<br>+"Venture Name: "+$("#ventureName").val()+<br>+"Venture Description: "+$("#ventureDesctiption").val()+<br>+"Venture Start Date: "+$("#ventureStartDate").val()+<br>+"Projected Growth: "+$("#ventureProjectedGrowth").val()+"%"+<br>+"Price Per Share: "+$("#venturePricePerShare").val()+<br>+"Equity Issue Monetary Goal: "+$("#ventureGoal").val());
+        $("#test2").html("Logging in: "+$("#username").val());
+    });
+
+    $("input").focus(function(){
+      $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+      $(this).css("background-color", "#ffffff");
+    });
+  });
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ChEx</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Homepage">Home</a></li>
+      <li><a href="EntrepreneurLanding">Entrepreneur Landing</a></li>
+      <li><a href="InvestorLanding">Investor Landing</a></li>
+      <li><a href="RankingPage">Rankings</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="LoginPage">Logout</a></li>
+          <li><a href="AccountPage">Account</a></li>
+          <li class="active"><a href="#">Balances</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <h1 style="color:#835C3B;font-family:helvetica;text-align:center;">Coffeehouse Exchange</h1>
+    <p style="color:#835C3B;font-family:helvetica;text-align:center;">Where Local Innovation Meets Opportunity</p>
+    <br>
+
+  <hr style="border:none;
+    color: #835C3B;
+    width: 90%;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;">
+  <br>
+
+  <div class="row">
+    <div class="col-sm-4" align="center">
+      <h2>Tom Rowley</h2>
+    <img src="images/tom.jpg" class="img-circle" alt="Tom" width="150" height="150">
+    <br>
+    <br>
+    <p>Member Since: July 2015</p>
+    <br>
+    <p>Entrepreneur Rating: 9.7/10.0</p>
+    <div class="progress" style="width:70%">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width:92%">
+        92 Percentile Ranking
+      </div>
+    </div>
+
+    <br>
+    <p>Investor Rating: 9.9/10.0</p>
+    <div class="progress" style="width:70%">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:99%">
+        99 Percentile Ranking
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4" align="center">
+      <h2>Assets/Liabilities Held</h2>
+      <br>
+      <br>
+      <br>
+      <p>Outstanding Debt Issued: $7,895.35</p>
+      <p>Outstanding Equity Issued : $3,245.76</p>
+      <p>Outstanding Loans Held: $783.55</p>
+      <p>Outstanding Equity Held: $245.78</p>
+      <br>
+      <p>Cash Balance: $2,367.84</p>
+      <p>Buying Power: $5,389.29</p>
+      <br>
+    </div>
+    <div class="col-sm-4" align="center">
+      <h2>Banking and Taxes</h2>
+      <br>
+      <br>
+      <br>
+      <p><a href="#">Add Funds to ChEx Account</a></p>
+      <p><a href="#">Direct Deposit to Bank Account</a></p>
+      <p><a href="#">Tax Documents</a></p>
+      <p><a href="#">SIPC Listings</a></p>
+      <p><a href="#">Relevant Prospectus'</a></p>
+      <p><a href="#">Venture Equity Agreement Documents</a></p>
+      <p><a href="#">Debt Agreement Documents</a></p>
+      <p><a href="#">Referral Code</a></p>
+
+    </div>
+  </div>
+
+
+  </body>
+  </html>

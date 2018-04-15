@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // for the original object selection
+    $('#div1').hide();
+    $('#div2').hide();
+    $('#div3').hide();
+    $('#div4').hide();
+    $("#b1").click(function(){
+      $('#div1').show();
+      $('#div2').hide();
+      $('#div3').hide();
+      $('#div4').hide();
+      $("#test2").html("");
+//      $("#divData").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+//        if(statusTxt == "success")
+//            alert("External content loaded successfully!");
+//        if(statusTxt == "error")
+//            alert("Error: " + xhr.status + ": " + xhr.statusText);
+//    });
+    });
+    $("#b2").click(function(){
+      $('#div1').hide();
+      $('#div2').show();
+      $('#div3').hide();
+      $('#div4').hide();
+      $("#test2").html("");
+    });
+    $("#b3").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').show();
+      $('#div4').hide();
+      $("#test2").html("");
+    });
+    $("#b4").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').hide();
+      $('#div4').show();
+      $("#test2").html("");
+    });
+    $("#b5").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').hide();
+      $('#div4').hide();
+      $("#test2").html("Getting rankings for entrepreneurs");
+    });
+    $("#b6").click(function(){
+      $('#div1').hide();
+      $('#div2').hide();
+      $('#div3').hide();
+      $('#div4').hide();
+      $("#test2").html("Getting rankings for individual investors");
+    });
+
+
+    // submit buttons
+    $("#btn1").click(function(){
+      $("#test2").html("Getting data for venture with ID: "+$("#ventureID").val());
+    });
+    $("#btn2").click(function(){
+      $("#test2").html("Getting data for entrepreneur with ID: "+$("#entrepreneurID").val());
+    });
+    $("#btn3").click(function(){
+      $("#test2").html("Getting data for individual investor with ID: "+$("#individualID").val());
+    });
+    $("#btn4").click(function(){
+      $("#test2").html("Getting data for corporation with ID: "+$("#corporationID").val());
+    });
+
+    $("input").focus(function(){
+      $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+      $(this).css("background-color", "#ffffff");
+    });
+  });
+</script>
+</head>
+<body>
+
+  <h2>Coffeehouse Exchange Landing Page</h2>
+  Toolbar:
+<button id="b1">Venture Query</button>
+<button id="b2">Entrepreneur Query</button>
+<button id="b3">Individual Investor Query</button>
+<button id="b4">Corporation Query</button>
+<button id="b5">Entrepreneur Reliability Ranking</button>
+<button id="b6">Individual Investor Seniority Ranking</button>
+
+  <p id="test1"></p>
+
+<div id='div1'>
+  Venture Query<br>
+  Venture ID: <input type="text" id="ventureID" name="venture ID"><br>
+  <button id="btn1">Submit</button>
+</div>
+<div id='div2'>
+  Entrepreneur Query<br>
+  Entrepreneur ID: <input type="text" id="entrepreneurID" name="entrepreneur ID"><br>
+  <button id="btn2">Submit</button>
+</div>
+<div id='div3'>
+  Individual Investor Query<br>
+  Individual ID: <input type="text" id="individualID" name="individual ID"><br>
+  <button id="btn3">Submit</button>
+</div>
+<div id='div4'>
+  Corporation Query<br>
+  Corporation ID: <input type="text" id="corporationID" name="corporation ID"><br>
+  <button id="btn4">Submit</button>
+</div>
+
+  <hr>
+  <p id="test2">Welcome to the Coffeehouse Exchange landing page. Please use our toolbar above to query our database for information regarding ventures, entrepreneurs, individual investors, and ranking!</p>
+<div id="divData"></div>
+</body>
+</html>
