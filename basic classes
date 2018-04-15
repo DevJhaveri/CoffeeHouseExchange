@@ -1,0 +1,83 @@
+import java.sql.Date
+
+public class Entrepeneur {
+    public static void main(String args[]) {
+        static int id;
+        double rating;
+        String Description;
+        String FirstName;
+        String Lastname;
+        static int SSN;
+        char sex;
+        date DOB;
+        date Join;
+    }
+}
+
+
+public class Individual {
+  public static void main(String args[]) {
+    static int id;
+    String Firstname;
+    String Lastnamel;
+    String Email;
+    static int SSN;
+    double rating;
+    static date DOB;
+    static date Join;
+    int Balance;
+  }
+}
+
+public class Venture {
+  public static void main(String args[]) {
+    static int id;
+    static int Ent_Id;
+    static boolean isDebt;
+    static int MaxUnits;
+    int RemainingUnits;
+    static double PricePerUnit;
+    date Startdate;
+    date Enddate;
+  }
+}
+
+public class Corporation {
+  public static void main(String args[]) {
+    static int id;
+    String Description;
+    String Name;
+  }
+}
+
+public class Debt extends Venture {
+  public static void main(String args[]) {
+    static double interest;
+    static date Expiry;
+    static double Guarantee;
+  }
+}
+
+public class Equity extends Venture {
+  public static void main(String args[]) {
+    static double PPS;
+    static double ExpectedReturn;
+    double PPS;
+}
+
+public class IndRelation {
+  public static void main(String args[]) {
+    static int VentureId;
+    static int IndId;
+    String IndReview;
+    int UnitsOwned;
+    double MonetaryValue;
+  }
+}
+
+public class CorpRelation{
+  public static void main(String args[]) {
+    static int VentureId;
+    static int CorpId;
+  }
+}
